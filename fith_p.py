@@ -6,6 +6,6 @@ def return_py_files(path):
         n_path = os.path.join(path,file) 
         if os.path.isdir(n_path):
             return_py_files(n_path)
-        if ".py" in file:
+        if file.endswith(".py"):
             print(file)
     return
